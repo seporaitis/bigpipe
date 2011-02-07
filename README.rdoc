@@ -1,6 +1,6 @@
 = OpenPipe
 
-* http://github.com/seporaitis/openpipe
+* http://github.com/seporaitis/bigpipe
 
 == What is OpenPipe?
 
@@ -19,7 +19,7 @@ With a little help from server side - load Pagelets. See "How does one run the e
 == How does one run the examples?
 
 * Clone OpenPipe repository somewhere in your document root or clone it and make a vhost for it (e.g. local.openpipe.org :)).
-* Open [http://localhost/openpipe/examples/] with a browser (I've tested with latest Chrome) and you should see two files there:
+* Open [http://localhost/bigpipe/examples/] with a browser (I've tested with latest Chrome) and you should see two files there:
 ** nopipe.php - simulates single-flush page loading when everything is generated on the server side and then flushed to the client
 ** openpipe.php - simulates Pagelet loading, when initial page layout is flushed and then Pagelets are loaded when they become available
 
