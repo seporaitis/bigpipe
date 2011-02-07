@@ -1,0 +1,37 @@
+= OpenPipe
+
+* http://github.com/seporaitis/openpipe
+
+== What is OpenPipe?
+
+OpenPipe is a quick, dirty and lightweight (~1.5Kb) implementation of Facebook BigPipe dynamic webpage serving system.
+
+== What is BigPipe, then?
+
+BigPipe is Facebook invention. Original article "{BigPipe: Pipelining web pages for high performance by Changhao Jiang}[http://www.facebook.com/notes/facebook-engineering/bigpipe-pipelining-web-pages-for-high-performance/389414033919]" on {Facebook Engineering}[http://www.facebook.com/Engineering] (very cool resource, btw).
+
+Basically what it does is that it _helps achieve_ faster page loading times by splitting page content into pieces called "Pagelets" and loading some of them simultaneously.
+
+== What can OpenPipe do in this quick and dirty form?
+
+With a little help from server side - load Pagelets. See "How does one run the examples?"
+
+== How does one run the examples?
+
+* Clone OpenPipe repository somewhere in your document root or clone it and make a vhost for it (e.g. local.openpipe.org :)).
+* Open [http://localhost/openpipe/examples/] with a browser (I've tested with latest Chrome) and you should see two files there:
+** nopipe.php - simulates single-flush page loading when everything is generated on the server side and then flushed to the client
+** openpipe.php - simulates Pagelet loading, when initial page layout is flushed and then Pagelets are loaded when they become available
+
+== Is this production ready?
+
+I'd probably say no :) But I think it is still a neat thing to play with and improve.
+
+== Where are the tests?
+
+Sorry, if there were tests, I wouldn't call it a quick and dirty implementation. :)))
+
+== Is OpenPipe open for improvements?
+
+Sure, if you have an idea feel free to contact me or fork the repository. I myself would very much like to create (see created) some 
+view helpers for Zend Framework or to play with and see how this could work with Facebook XHP from the server side.
